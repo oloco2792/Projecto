@@ -1,0 +1,72 @@
+:root{
+	--fuentePrincipal: 'Roboto', 'Arial', 'Times New Roman', sans-serif;
+}
+
+/**Globales**/
+
+html{
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+*, *:befor, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
+
+/**Utilidades**/
+
+.contenedor{
+	max-width: 120rem;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.centrar-texto{
+	text-align: center;
+}
+
+.caja{
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.48);
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.48);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.48);
+	margin: 2rem;
+	padding: 1%;
+	border-radius: 5px;
+}
+
+/**Login**/
+
+.login{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.login-bg{
+	background-image: url(../img/login_bg.jpg);
+}
+
+.login-login{
+	
+}
+/**Formulario Login**/
+
+.formulario-Login{
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario-Login__campo{
+
+}
+
+.formulario-Login__label{
+
+}
+
+.formulario-Login__submit{
+
+}
