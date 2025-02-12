@@ -7,21 +7,40 @@
 html{
     box-sizing: border-box;
     font-size: 62,5%;
-    min-height: 100vh;
 }
 
-*, *:befor, *:after{
+*, *:before, *:after{
     box-sizing: inherit;
 }
 
 body{
     font-family: var(--fuentePrincipal);
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2rem;
 }
 
-.pheight{
-	text-align: center;
-	background-color: black;
-	color: white;
+
+p{
+	line-height: 2rem;
+}
+
+h1{
+	font-size: 2,8rem;
+}
+
+h2{
+	font-size: 2.4rem;
+}
+
+h3{
+	font-size: 1.8rem;
+}
+
+h4{
+	font-size: 1.5rem;
 }
 
 /**Utilidades**/
@@ -36,9 +55,12 @@ body{
 	text-align: center;
 }
 
-.width100{
-	width: 100%;
+.height100{
 	height: 100%;
+}
+
+.width90{
+	width: 90%;
 }
 
 .caja{
@@ -46,31 +68,50 @@ body{
 	-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.48);
 	-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.48);
 	padding: 2rem;
-	border-radius: 5px;
+	border-radius: 1rem;
 }
 
 .grey-out{
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.9);
 }
 
-/**Navegacion**/
+/**Hero**/
+
+.hero{
+	padding: 10rem 2rem;
+}
+
+.hero__titulo{
+	margin-top: 0;
+}
+
+.hero__texto{
+
+}
 
 /**Login**/
 
 .login{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	flex-grow: 3;
 }
 
-.login-bg{
-	background-image: url(../img/login_bg.jpg);
+.login__bg{
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
 	color: #ffffff;
 }
 
-.login-login{
-	padding: 3rem;
+.login__form{
+	display: flex;
+	justify-content: center;
 }
 /**Formulario Login**/
+
+.formulario{
+	margin: auto 0;
+}
 
 .formulario-Login{
 	display: flex;
@@ -88,3 +129,13 @@ body{
 .formulario-Login__submit{
 
 }
+
+/**Footer**/
+
+
+
+/**.footer{
+	text-align: center;
+	background-color: black;
+	color: white;
+}**/
