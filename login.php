@@ -28,13 +28,13 @@
         </div>
         <main class="login__form">
             <div class="formulario caja">
-                <h2>Inicio de Sesión</h2>
+                <h2 class="">Inicio de Sesión</h2>
                 <form class="formulario-Login" action="/action_page.php">
-                    <label for="usuarioLogin">Usuario</label>
-                    <input type="text" id="usuarioLogin" name="usuarioLogin">
-                    <label for="contraseñaLogin">Contraseña</label>
-                    <input type="text" id="contraseñaLogin" name="contraseñaLogin">
-                    <input type="submit" value="ingresar">
+                    <label for="usuarioLogin" class="formulario-login__label">Usuario</label>
+                    <input type="text" id="usuarioLogin" name="usuarioLogin" class="formulario-login__campo">
+                    <label for="contraseñaLogin" class="formulario-login__label">Contraseña</label>
+                    <input type="text" id="contraseñaLogin" name="contraseñaLogin" class="formulario-login__campo">
+                    <span class="boton-derecha"><input type="submit" value="Ingresar" class="formulario-login__submit"></span>
                 </form>
             </div>
         </main>
